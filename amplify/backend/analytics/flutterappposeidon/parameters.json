@@ -1,0 +1,21 @@
+{
+    "appName": "flutterappposeidon",
+    "roleName": "pinpointLambdaRolef809fe3f",
+    "cloudformationPolicyName": "cloudformationPolicyf809fe3f",
+    "cloudWatchPolicyName": "cloudWatchPolicyf809fe3f",
+    "pinpointPolicyName": "pinpointPolicyf809fe3f",
+    "authPolicyName": "pinpoint_amplify_f809fe3f",
+    "unauthPolicyName": "pinpoint_amplify_f809fe3f",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
